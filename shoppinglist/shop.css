@@ -1,0 +1,34 @@
+.span-x {
+  cursor: pointer;
+  float: right;
+  padding-right: 10px;
+}
+
+.items {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 400px;
+}
+
+td {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+
+}
+
+.title {
+  padding: 20px;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.duplicate {
+  margin-top: 10px;
+}

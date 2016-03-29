@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="./hexafy.js">
+    </script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <input type="text" ng-model="number"><br>
+      {{number | myFormat}}
+    </div>
+  </body>
+</html>

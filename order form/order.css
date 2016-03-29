@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+  width: 40%;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+li.true {
+  background-color: lightblue;
+}
+
+/*li .false {
+  background-color: white;
+}*/

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="./orderform.js"></script>
+    <link rel="stylesheet" href="order.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div  ng-controller="myCtrl as myCtrl">
+      <ul ng-repeat="x in myCtrl.services">
+        <li ng-click="myCtrl.calculateTotal($event, $index)" class="false">{{x.name}} {{x.price | currency}}</li>
+      </ul>
+      {{myCtrl.total | currency}}
+    </div>
+  </body>
+</html>

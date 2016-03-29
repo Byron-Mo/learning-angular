@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="myController">
+      <table>
+        <tr ng-repeat="x in list">
+          <td>
+            {{x}}
+          </td>
+        </tr>
+      </table>
+
+      <script type="text/javascript">
+        var app = angular.module("myApp", []);
+
+        app.controller("myController", function($scope) {
+          $scope.list = ["hello", "hi"];
+        })
+      </script>
+  </body>
+</html>

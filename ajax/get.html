@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="./get.js">
+    </script>
+  </head>
+  <body>
+      <table ng-app="myApp" ng-controller="myCtrl">
+        <tr>
+          <th ng-click="orderByMe('Country')">Country</th>
+          <th ng-click="orderByMe('City')">City</th>
+          <th ng-click="orderByMe('Name')">Name</th>
+        </tr>
+        <tr ng-repeat="x in message | orderBy: myOrderBy">
+          <td>{{x.Country}}</td>
+          <td>{{x.City}}</td>
+          <td>{{x.Name}}</td>
+        </tr>
+      </table>
+  </body>
+</html>
